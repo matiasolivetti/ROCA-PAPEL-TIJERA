@@ -1,0 +1,25 @@
+body{
+	background: #26bcc1;
+}
+
+.horizontalPlayer li{
+	
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+}
+
+.horizontalBot li {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+}
+
+
+.horizontalResultado li{
+	display: flex;
+	margin: 0;
+	padding: 0;
+}

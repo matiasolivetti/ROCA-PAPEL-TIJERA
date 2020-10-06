@@ -1,0 +1,88 @@
+function jugar(obj){
+	
+	 var bot;
+	 var objetos;
+	 var res;
+	 
+	objetos=["Roca","Papel","Tijera"];
+	bot=Math.floor(Math.random()*3);
+	//la funcion Math va con la M en mayuscula//
+	
+	
+     document.getElementById("humano").innerHTML=objetos[obj];
+     document.getElementById("bot").innerHTML=objetos[bot];
+	 //document.getElementById("resultado").innerHTML=res;
+	 
+	 
+	 
+	 //comando de los movimientos//
+	
+	 movHum=objetos[obj]
+	 movBot=objetos[bot]
+	
+	
+	//todos los if//
+	
+	//ROCA
+	 if (movHum=="Roca"&& movBot=="Roca"){
+		 res="Empate, Ninguno Gana";
+		 console.log(res);
+		 document.getElementById("resultado").innerHTML=res;
+		 
+	 }
+	 if (movHum=="Roca"&& movBot=="Papel"){
+		 res="Papel le gana a Roca, el Bot Gana";
+		 console.log(res);
+		 document.getElementById("resultado").innerHTML=res;
+	 }
+	 if (movHum=="Roca"&& movBot=="Tijera"){
+		 res="Roca le gana a Tijera, el Player Gana";
+		 console.log(res);
+		 document.getElementById("resultado").innerHTML=res;
+	 }
+	
+	//PAPEL
+	 if (movHum=="Papel"&& movBot=="Papel"){
+		 res="Empate, Ninguno Gana";
+		 console.log(res);
+		 document.getElementById("resultado").innerHTML=res;
+		 
+	 }
+	 if (movHum=="Papel"&& movBot=="Tijera"){
+		 res="Tijera le gana a Papel, el Bot Gana";
+		 console.log(res);
+		 document.getElementById("resultado").innerHTML=res;
+	 }
+	 if (movHum=="Papel"&& movBot=="Roca"){
+		 res="Papel le gana a Roca, el Player Gana";
+		 console.log(res);
+		 document.getElementById("resultado").innerHTML=res;
+	 }
+	 
+	 
+	 
+	 //TIJERA
+	 if (movHum=="Tijera"&& movBot=="Tijera"){
+		 res="Empate, Ninguno Gana";
+		 console.log(res);
+		 document.getElementById("resultado").innerHTML=res;
+	 }
+	 if (movHum=="Tijera"&& movBot=="Roca"){
+		 res="Roca le gana a Tijera, el Bot Gana";
+		 console.log(res);
+		 document.getElementById("resultado").innerHTML=res;
+	 }
+	 if (movHum=="Tijera"&& movBot=="Papel"){
+		 res="Tijera le gana a Papel, el Player Gana";
+		 console.log(res);
+		 document.getElementById("resultado").innerHTML=res;
+	 }
+	
+	console.log(objetos[obj]);
+	console.log(objetos[bot]);
+	
+	
+	
+	
+	
+}

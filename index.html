@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+	 
+	 
+<link rel="stylesheet" type="text/css" href="estilo.css" >
+         <title>ROCA; PAPEL; TIJERA</title>
+
+     </head>
+
+
+     <body>
+         <center><h1>JUEGO DE ROCA, PAPEL y TIJERA</h1></center>
+		 
+		 <center>
+		     <img src="imagen/roca.png" style="width: 200px" onclick="jugar(0)">
+			 <img src="imagen/papel.png" style="width: 200px" onclick="jugar(1)">
+			 <img src="imagen/tijera.png" style="width: 160px" onclick="jugar(2)">
+		 </center>
+
+<h2>
+		 <ul class="horizontalPlayer">
+			 <li>PLAYER 1 seleccionó:</li>
+			 <li id="bot"></li>
+		 </ul>
+</h2>
+<h2>
+		 <ul class="horizontalBot">
+			 <li>BOT seleccionó:</li>
+			 <li id="humano"></li>
+	    </ul>
+</h2>
+<h2>	
+	     <ul class="horizontalResultado">
+		     <li>RESULTADO:</li>
+		     <li id="resultado">hola</li>
+         </ul>
+</h2>		 
+		 
+		 
+		 <script src="funcionalidad"></script>
+
+
+     </body>
+
+</html>
